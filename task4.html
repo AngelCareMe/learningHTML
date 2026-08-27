@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семантическая разметка</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        header {
+            background-color: #f0f0f0;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 80px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px auto;
+        }
+
+        nav {
+            background-color: #e0e0e0;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #f0f0f0;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="assets/img/logo.png" alt="Логотип сайта">
+        <h1>Мой учебный сайт</h1>
+        <p>Пример использования семантической разметки HTML5</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#section-1">Главная</a></li>
+            <li><a href="#section-2">Обучение</a></li>
+            <li><a href="#footer-contacts">Контакты</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="section-1">
+            <h2>Что такое семантическая разметка</h2>
+
+            <p>
+                Семантическая разметка позволяет не только визуально оформить контент,
+                но и передать смысл отдельных частей страницы. Например, теги
+                <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+                <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code> и
+                <code>&lt;footer&gt;</code> помогают браузеру, поисковым системам
+                и вспомогательным технологиям лучше понимать структуру документа.
+            </p>
+
+            <p>
+                Использование семантических элементов улучшает доступность,
+                упрощает поддержку кода и делает страницу более логичной.
+            </p>
+        </section>
+
+        <section id="section-2">
+            <h2>Планы по изучению веб-технологий</h2>
+
+            <p>
+                После изучения базового HTML я планирую продолжить изучение
+                веб-разработки: познакомиться с более сложными элементами разметки,
+                освоить основы CSS, научиться оформлять таблицы, формы, адаптивные
+                страницы и интерактивные элементы.
+            </p>
+
+            <p>
+                Также я планирую практиковаться в создании учебных проектов,
+                размещать их в Git-репозиториях и постепенно формировать портфолио.
+            </p>
+        </section>
+
+    </main>
+
+    <footer id="footer-contacts">
+        <h2>Контактная информация</h2>
+
+        <address>
+            <p>Email: <a href="mailto:student@example.com">student@example.com</a></p>
+            <p>Телефон: +7 (900) 000-00-00</p>
+            <p>Адрес: г. Москва, ул. Учебная, д. 1</p>
+        </address>
+
+        <p>
+            &copy; 2026. Практическая работа по дисциплине «Введение в HTML».
+        </p>
+    </footer>
+
+</body>
+</html>
